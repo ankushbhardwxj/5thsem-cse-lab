@@ -1,5 +1,7 @@
-#include<stdio.h>
-void main(){
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
   int bt[20],p[20],wt[20],tat[20],i,j,n,total=0,pos,temp;
   float avg_wt, avg_tat;
   printf("Enter number of processes: ");
@@ -11,20 +13,22 @@ void main(){
     p[i]=i+1;
   }
   //sorting bt in ascending order
-  for(i=0;i<n;i++){
-    pos=i;
-    for(j=i+1;j<n;j++){
-      if(bt[j]<bt[pos])
-      pos=j;
-    }
-    temp=bt[i];
-    bt[i]=bt[pos];
-    bt[pos]=temp;
-
-    temp=p[i];
-    p[i]=p[pos];
-    p[pos]=temp;
-  }
+  // for(i=0;i<n;i++){
+  //   pos=i;
+  //   for(j=i+1;j<n;j++){
+  //     if(bt[j]<bt[pos])
+  //     pos=j;
+  //   }
+  //   temp=bt[i];
+  //   bt[i]=bt[pos];
+  //   bt[pos]=temp;
+  //
+  //   temp=p[i];
+  //   p[i]=p[pos];
+  //   p[pos]=temp;
+  // }
+  sort(bt,bt+n);
+  sort(p,p+n);
   wt[0]=0;
   //cal waiting time
   for(i=1;i<n;i++){
