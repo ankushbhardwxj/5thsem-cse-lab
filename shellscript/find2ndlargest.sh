@@ -1,3 +1,12 @@
+#Algorithm
+# greatest = max (a,b,c)
+# if (a == greatest)
+#   max (b,c) is secondgreat
+# elif (b == greatest)
+#   max (a,b) is second great
+# else 
+#   max (a,c) is second great
+
 read a b c
 greatest=0
 if [ $a -gt $b -a $a -gt $c ]

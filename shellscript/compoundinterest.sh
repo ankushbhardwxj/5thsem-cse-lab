@@ -4,6 +4,7 @@ read t
 #whats this bc and echo shit ?
 #bc is something called basic calc which uses following syntax
 #we can also use `expr` instead of `bc`
+# if this gives an error, use sudo apt-get bc
 p=`echo "scale=4; 1 + $p"|bc`
 n=`echo "scale=4; 1 + $p"|bc`
 m=`echo "scale=4; $n ^ $t"|bc`
