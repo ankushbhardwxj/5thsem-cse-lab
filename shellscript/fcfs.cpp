@@ -11,8 +11,6 @@ void print_table(int p,int p_no[], int at[], int bt[], int ct[], int tat[], int 
 void calc_ct(int p,int p_no[], int at[], int bt[], int ct[]){
   int s = 0;
   for(int i=0;i<p;i++){
-    //check for smallest AT
-    //if multiple AT is present,check for lowest p_no
     s += bt[i];
     ct[i] = s;
   }

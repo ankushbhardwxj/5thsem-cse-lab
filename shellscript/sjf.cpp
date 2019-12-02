@@ -21,10 +21,12 @@ void calc_wt(int p, int p_no[], int tat[], int bt[], int wt[]){
 }
 void calc_ct(int p, int p_no[], int at[], int bt[], int ct[]){
   int s = 0;
+  //duplicate bt
   int dt[10];
   for(int i=0;i<p;i++){
     dt[i] = bt[i];
   }
+  //adding extra time
   if(at[0]!=0){
       s = s + at[0];
   }
